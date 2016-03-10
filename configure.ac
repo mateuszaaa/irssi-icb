@@ -4,6 +4,8 @@ AC_PREREQ([2.61])
 AC_CONFIG_HEADERS(config.h)
 
 AM_INIT_AUTOMAKE([-Wall -Werror foreign nostdinc silent-rules])
+m4_ifdef([AM_PROG_AR], [AM_PROG_AR])
+LT_INIT
 AM_MAINTAINER_MODE
 
 AC_PROG_CC
